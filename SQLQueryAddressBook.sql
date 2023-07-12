@@ -29,3 +29,5 @@ WHERE first_name = 'Divya' AND last_name = 'Mishra'
 UPDATE address_book SET address = '456 New Bihar', zip = '78990', 
 phone_number = '987537', email = 'aakansha12@gmail.com'
 WHERE first_name = 'Aakanksha' AND last_name = 'Pandey';
+
+DELETE FROM address_book WHERE first_name = 'Shivam' /* delete particular row by name */
