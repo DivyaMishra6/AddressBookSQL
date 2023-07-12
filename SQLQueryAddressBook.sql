@@ -31,3 +31,15 @@ phone_number = '987537', email = 'aakansha12@gmail.com'
 WHERE first_name = 'Aakanksha' AND last_name = 'Pandey';
 
 DELETE FROM address_book WHERE first_name = 'Shivam' /* delete particular row by name */
+
+INSERT INTO address_book VALUES('Ritu','Pandey','Sector-2','Bhilai','CG','456786','90456723','ritu@gmail.com') /* again insert one more value */
+
+SELECT * FROM address_book WHERE city = 'Bhilai' /* search by city */
+SELECT * FROM address_book WHERE state = 'MP'/* search by state */
+SELECT DISTINCT city FROM address_book /* distinct values */
+SELECT DISTINCT state FROM address_book
+
+SELECT * FROM address_book
+
+SELECT city, COUNT(*) FROM address_book GROUP BY city /* by group by count city */ 
+SELECT state, COUNT(*) as count FROM address_book GROUP BY state /* by group by count state or by as we give name to column */ 
