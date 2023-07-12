@@ -50,6 +50,8 @@ SELECT * FROM address_book WHERE city = 'Bhilai' ORDER BY first_name ASC /* with
  /* add 2 new column name and type*/
 ALTER TABLE address_book ADD name VARCHAR(50),type VARCHAR(50) 
 
+SELECT type, COUNT(*) AS count FROM address_book GROUP BY type  /* count person by type */
+
 UPDATE address_book SET name='Family Address Book', type = 'Family' WHERE id = 1
 UPDATE address_book SET name='Friends Address Book', type = 'Friends' WHERE id = 2
 UPDATE address_book SET name='Professional Address Book', type = 'Professional' WHERE id = 5
